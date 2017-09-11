@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      
+    </head>
+    <body>
+
+     <div style="text-align:center">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">NEWS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+               
+              <button  class="btn btn-outline-success my-2 my-sm-0" [routerLink]="'/favourites'">Favourites</button> 
+              <button  class="btn btn-outline-success my-2 my-sm-0" [routerLink]="'/login'">Login</button> 
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+        
+            </form>
+          </div>
+        </nav>  
+    </div> <br><br><br>
+
+     
+
+
+     <app-list (recieve)="onrecieve($event)"></app-list>
+     <app-channel [names]="data"></app-channel>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <footer>
+        <div class="footer foot" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> LifeStyle </h3>
+                        <ul>
+                            <li> <a href="#"> Home </a> </li>
+                            <li> <a href="#"> Food </a> </li>
+                            <li> <a href="#"> Travel </a> </li>
+                            <li> <a href="#"> Music </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Business </h3>
+                        <ul>
+                            <li> <a href="#"> News </a> </li>
+                            <li> <a href="#"> Capital </a> </li>
+                            <li> <a href="#"> CBBC </a> </li>
+                            <li> <a href="#"> Arts </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Sports </h3>
+                        <ul>
+                            <li> <a href="#"> Sport </a> </li>
+                            <li> <a href="#"> Radio </a> </li>
+                            <li> <a href="#"> Culture </a> </li>
+                            <li> <a href="#"> CBeebies </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Nature </h3>
+                        <ul>
+                            <li> <a href="#"> Weather </a> </li>
+                            <li> <a href="#"> Autos </a> </li>
+                            <li> <a href="#"> Taster </a> </li>
+                            <li> <a href="#"> Shop </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                        <h3> Contact Us</h3>
+                        <ul>
+                            <li>
+                                <div class="input-append newsletter-box text-center">
+                                    <input type="text" class="full text-center" placeholder="Email ">
+                                    <button class="btn  bg-gray" type="button"> Submit  <i class="fa fa-long-arrow-right"> </i> </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.row--> 
+            </div>
+            <!--/.container--> 
+        </div>
+        <!--/.footer-->
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="pull-left"> Copyright © Footer E-commerce Plugin 2017. All right reserved. </p>
+               
+            </div>
+        </div>
+        <!--/.footer-bottom--> 
+    </footer>
+    </body>
+    </html>
+
+
+    <!-- <div class="Footer text-white">
+    		        <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                    <ul>
+                    <li><h3>Policies</h3></li>
+                    <li>CONTACT PRIVACY POLICY</li> 
+                    <li>LEGAL DISCLAIMER</li> 
+                    <li>COMPLAINT</li> 
+                    <li>OUR TEAM</li>
+                    <li>INVESTOR INFO</li>
+                    </ul> 
+                    </div>
+
+                    <div class="col-md-12 col-lg-4">
+                    <ul>
+                    <li><h3>News</h3></li>
+                    <li>Sports News</li> 
+                    <li>Business News</li> 
+                    <li>Political News</li> 
+                    <li>International News</li>
+                    <li>Bollywood News</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">         
+    		            <ul>
+    		                <li><h3>Connect With Us</h3></li>
+    		                <li> <a href="#"><img src="../../images/facebook.png"></a>
+    		                <a href="https://www.youtube.com"><img src="../../images/youtube.png"></a>
+    		                <a href="https://twitter.com/login"><img src="../../images/twitter.png"></a>
+    		                <a href="https://www.snapchat.com/l/en-gb/"><img src="../../images/snapchat.png"></a></li>
+    		            </ul>
+                    </div>
+
+                    </div>
+                    </div>
+                    </div>
+
+     -->

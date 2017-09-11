@@ -1,0 +1,40 @@
+.Footer
+{
+    background-color: #252222;
+}
+
+.Footer ul li
+{
+	list-style: none;
+}
+
+ .logo{
+  margin-top: -50px;
+  background-color: #525398   ;
+  height: 18rem;
+}
+
+.lead{
+  color: white;
+}
+
+.mania {
+  color: #11830D ;
+  font-style: italic;
+}
+
+.colour{
+	color:white;
+	text-align: center;
+}
+
+.dropdown{
+  margin-left:40%;
+}
+
+.button{
+	margin-top:2%;
+}
+ body{
+    background-image: no-repeat;
+  }

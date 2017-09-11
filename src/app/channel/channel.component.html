@@ -1,0 +1,24 @@
+ 
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-lg-4" *ngFor="let dataa of names" >
+<div class="card card-cascade wider">
+
+   
+    <div class="view overlay hm-white-slight">
+        <img src={{dataa.urlToImage}} class="img-fluid">
+        <a href="#!">
+            <div class="mask"></div>
+        </a>
+    </div>
+       <div class="card-body text-center custom">
+         <h4 class="card-title"><strong>{{dataa.title.slice(0,70)}}</strong></h4>
+         <button (click)="addfavourites(dataa)" type="button" class="btn btn-primary">Add to Favourites</button>
+         <button type="button" class="btn btn-primary">Read More</button>
+    </div>
+   
+</div>
+</div>
+</div>
+</div> 
+

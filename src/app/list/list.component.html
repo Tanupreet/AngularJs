@@ -1,0 +1,40 @@
+
+<!-- <div class="jumbotron jumbotron-fluid logo">
+<br><br><br>
+<br>
+  <div class="colour">
+       <h1 class="display-3">Bad news isn't wine. It doesn't improve with age.</h1>
+   </div> -->
+<!--    <br><br><br>
+<br>   -->
+<div class="container">
+<div class="styled-select">
+<div class="dropdown ">
+    <form class="form-inline my-2 my-lg-0">
+       <select class="styled-select" #selectedname>
+          <option *ngFor="let data of newData" [value]="data.id">
+            {{data.name}}
+          </option>
+        </select>
+      </form>
+      </div>
+      <div class="search"> 
+      <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-2 custom">
+       <button (click)="searchData(selectedname.value)" class="btn btn btn-danger my-2 my-sm-0 btn" type="submit">Search</button>
+       <br><br>
+       </div>    
+       </div>
+       </div>   
+ </div>
+ </div>
+
+
+ <app-channel [names]="data"></app-channel>
+<!-- </div>  -->
+ 
+
+          
+
+

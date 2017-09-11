@@ -1,0 +1,98 @@
+
+<!-- <button class="btn btn-danger ml-2" (click)="show()">Show All</button> -->
+<div style="text-align:center">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">NEWS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+          <button  class="btn btn-outline-success my-2 my-sm-0" [routerLink]="'/favourites'">Favourites</button> 
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+    
+        </form>
+      </div>
+    </nav>  
+</div>
+
+<br><br><br><br>
+<!-- <div class="jumbotron jumbotron-fluid logo">
+<br><br><br><br>
+  <div class="colour">
+       <h1 class="display-3">Your Favourites</h1>
+   </div>
+<br><br><br>
+<div>
+</div>
+</div> -->
+
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-lg-4" *ngFor="let data of data" >
+<div class="card card-cascade wider">
+
+   
+    <div class="view overlay hm-white-slight">
+        <img src={{data.urlToImage}} class="img-fluid">
+        <a href="#!">
+            <div class="mask"></div>
+        </a>
+    </div>
+       <div class="card-body text-center">
+         <h4 class="card-title"><strong>{{data.title.slice(0,70)}}</strong></h4>
+         <button class="btn btn-danger ml-2" (click)="delete(data)">Delete</button>
+         <button type="button" class="btn btn-primary">Read More</button>
+    </div>
+   
+</div>
+</div>
+</div>
+</div>
+
+<!-- <div class="Footer text-white">
+		        <div class="container-fluid">
+                <div class="row">
+                <div class="col-md-12 col-lg-4">
+                <ul>
+                <li><h3>Policies</h3></li>
+                <li>CONTACT PRIVACY POLICY</li> 
+                <li>LEGAL DISCLAIMER</li> 
+                <li>COMPLAINT</li> 
+                <li>OUR TEAM</li>
+                <li>INVESTOR INFO</li>
+                </ul> 
+                </div>
+
+                <div class="col-md-12 col-lg-4">
+                <ul>
+                <li><h3>News</h3></li>
+                <li>Sports News</li> 
+                <li>Business News</li> 
+                <li>Political News</li> 
+                <li>International News</li>
+                <li>Bollywood News</li>
+                </ul>
+                </div>
+                
+                <div class="col-md-12 col-lg-4">         
+		            <ul>
+		                <li><h3>Connect With Us</h3></li>
+		                <li> <a href="https://www.facebook.com"><img src="images/facebook.png"></a>
+		                <a href="https://www.youtube.com"><img src="images/youtube.png"></a>
+		                <a href="https://twitter.com/login"><img src="images/twitter.png"></a>
+		                <a href="https://www.snapchat.com/l/en-gb/"><img src="images/snapchat.png"></a></li>
+		            </ul>
+                </div>
+
+                </div>
+                </div>
+                </div> -->
